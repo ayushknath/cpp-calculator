@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void calc(int *num1, int *num2, float *ans, char operation)
+void calc(float *num1, float *num2, float *ans, char operation)
 {
     switch (operation)
     {
@@ -15,7 +15,7 @@ void calc(int *num1, int *num2, float *ans, char operation)
         *ans = (*num1) * (*num2);
         break;
     case '/':
-        *ans = *num1 / (float)*num2;
+        *ans = *num1 / *num2;
         break;
     default:
         cout << "Invalid opeartion\n";
@@ -25,8 +25,7 @@ void calc(int *num1, int *num2, float *ans, char operation)
 
 int main()
 {
-    int num1, num2;
-    float ans;
+    float num1, num2, ans;
     char user_wish, operation;
 
     do
