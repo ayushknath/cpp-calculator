@@ -18,7 +18,7 @@ void calc(float *num1, float *num2, float *ans, char operation)
         *ans = *num1 / *num2;
         break;
     default:
-        cout << "Invalid opeartion\n";
+        cout << "Invalid operation\n";
         break;
     }
 }
